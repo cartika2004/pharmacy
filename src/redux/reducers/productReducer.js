@@ -14,12 +14,13 @@ export const productReducer = (state = initialState, { type, payload }) => {
 };
 
 
+
 export const selectedProductReducer = (state = {}, { type, payload }) => {
   switch (type) {
-    case "SELECTED_PRODUCT":
+    case ActionTypes.SELECTED_PRODUCT: // <-- Pastikan 'case' ini cocok
       return { ...state, ...payload };
-    case "REMOVE_SELECTED_PRODUCT":
-      return {}; // Kembalikan ke object kosong
+    case ActionTypes.REMOVE_SELECTED_PRODUCT:
+      return {};
     default:
       return state;
   }
