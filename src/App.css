@@ -1,3 +1,4 @@
+/* Kode default dari Create React App (bisa Anda simpan atau hapus) */
 .App {
   text-align: center;
 }
@@ -35,4 +36,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* --- CSS TAMBAHAN UNTUK LAYOUT PRODUK --- */
+
+.ui.cards > .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card .content {
+  flex-grow: 1;
+}
+
+.card .meta.price {
+  margin-top: auto;
 }
